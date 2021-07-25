@@ -15,7 +15,7 @@ Doctoral Program, Yamazaki Yoshihiro Laboratory.
 
 # Contact
 
-E-mail: heiankyo615_あっと_fuji.waseda.jp (change _あっと_ to @)
+E-mail: heiankyo615あっとfuji.waseda.jp (change あっと to @)
 
 [LinkedIn](https://www.linkedin.com/in/%E6%B8%93%E4%B8%80%E9%83%8E-%E9%A6%99%E5%B7%9D-78768a183/)
 
