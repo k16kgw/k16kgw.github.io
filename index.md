@@ -1,6 +1,5 @@
 ---
 layout: default
-title: top page
 ---
 
 # Top Page
