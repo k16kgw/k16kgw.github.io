@@ -7,6 +7,7 @@ title: top page
 # Top Page
 
 This is the personal site of Keiichiro KAGAWA (香川渓一郎).
+日本語のページは [https://sites.google.com/view/keiichiro-kagawa](https://sites.google.com/view/keiichiro-kagawa) へ
 
 # Affiliation
 
