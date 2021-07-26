@@ -7,6 +7,7 @@ title: top page
 # Top Page
 
 This is the personal site of Keiichiro KAGAWA (香川渓一郎).
+
 日本語のページは [https://sites.google.com/view/keiichiro-kagawa](https://sites.google.com/view/keiichiro-kagawa) へ
 
 # Affiliation
@@ -27,8 +28,11 @@ I'm studying the well-posedness of solutions to nonlinear partial differential e
 # Keywords
 
 Nonlinear differential equation, nonlinear evolution equation, functional analysis;
+
 well-posedness, initial/boundary value problem;
+
 maximal monotone operator, Lipschitz continuous;
+
 Cahn–Hilliard equation
 
 # Qualification
