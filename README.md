@@ -1,5 +1,4 @@
 # keikagawa.github.io
 
-GitHub Pages でホームページを立ててみようと思っています．
-Google site に自分用の静的なホームページを持っていますが，ページの更新作業がしにくくイライラしてきたのでこちらに少しずつ移行しようと思っています．
-これから少しずつ気が向いたときに内容を充実させていく予定です．
+This is keikagawa's English web page.
+You can see the Japanese version at "https://sites.google.com/view/keiichiro-kagawa"
