@@ -12,8 +12,36 @@ This is the personal site of Keiichiro KAGAWA (香川渓一郎).
 
 # Affiliation
 
-Department of Physics / Applied Physics, School of Advanced Science and Engineering, Waseda University.
-Doctoral Program, Yamazaki Yoshihiro Laboratory.
+Department of Pure and Applied Physics, Graduate School of Advanced Science and Engineering, Waseda University
+Doctoral Program, Yamazaki Yoshihiro Laboratory
+
+## Academies
+
+- [https://www.mathsoc.jp/en/](The Mathematical Society of Japan) (09/2018 - Now)
+- [https://www.nagare.or.jp/en/index.html](The Japan Society of Fluid Mechanics) (09/2019 - Now)
+- [https://www.jps.or.jp/english/](The Physical Society of Japan) (09/2021 - Now)
+- [https://jsiam.org/en/](The Japan Society for Industrial and Applied Mathematics) (09/2022 - Now)
+
+# Education
+
+- 04/2011 - 03/2014, Musashi High School
+- 04/2014 - 03/2018, Department of Applied Physics, School of Advanced Science and Engineering, Waseda Univ.
+- 04/2018 - 03/2020, Master's Program in Department of Pure and Applied Physics, Graduate School of Advanced Science and Engineering, Waseda Univ. (03/15/2020, Master of Science)
+- 04/2020 - Now, Doctoral Program in Department of Pure and Applied Physics, Graduate School of Advanced Science and Engineering, Waseda Univ.
+
+# Occupation
+
+## Occupational history
+
+None
+
+## Current job
+
+04/2020 - 03/2023, Research Fellow of Japan Society for the Promotion of Science (DC1)
+
+# Awards
+
+- 小泉賞, 早稲田応用物理会・早稲田物理会
 
 # Contact
 
@@ -29,11 +57,11 @@ I'm studying the well-posedness of solutions to nonlinear partial differential e
 
 Nonlinear differential equation, nonlinear evolution equation, functional analysis;
 
-well-posedness, initial/boundary value problem;
+well-posedness, initial/boundary value problem, dynamic boundary condition;
 
 maximal monotone operator, Lipschitz continuous;
 
-Cahn–Hilliard equation
+Cahn–Hilliard equation;
 
 # Qualification
 
