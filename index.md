@@ -17,10 +17,10 @@ Doctoral Program, Yamazaki Yoshihiro Laboratory
 
 ## Academies
 
-- [https://www.mathsoc.jp/en/](The Mathematical Society of Japan) (09/2018 - Now)
-- [https://www.nagare.or.jp/en/index.html](The Japan Society of Fluid Mechanics) (09/2019 - Now)
-- [https://www.jps.or.jp/english/](The Physical Society of Japan) (09/2021 - Now)
-- [https://jsiam.org/en/](The Japan Society for Industrial and Applied Mathematics) (09/2022 - Now)
+- [The Mathematical Society of Japan](https://www.mathsoc.jp/en/) (09/2018 - Now)
+- [The Japan Society of Fluid Mechanics](https://www.nagare.or.jp/en/index.html) (09/2019 - Now)
+- [The Physical Society of Japan](https://www.jps.or.jp/english/) (09/2021 - Now)
+- [The Japan Society for Industrial and Applied Mathematics](https://jsiam.org/en/) (09/2022 - Now)
 
 # Education
 
