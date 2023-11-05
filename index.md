@@ -12,30 +12,29 @@ This is the personal site of Keiichiro KAGAWA (香川渓一郎).
 
 # Affiliation
 
-Department of Pure and Applied Physics, Graduate School of Advanced Science and Engineering, Waseda University
-Doctoral Program, Yamazaki Yoshihiro Laboratory
+(Specially Appointed) Assistant Professor, Research Institute for Electronic Science, Hokkaido Univ.
+
+[ORCID](https://orcid.org/0000-0002-4214-2029)
 
 ## Academies
 
 - [The Mathematical Society of Japan](https://www.mathsoc.jp/en/) (09/2018 - Now)
-- [The Japan Society of Fluid Mechanics](https://www.nagare.or.jp/en/index.html) (09/2019 - Now)
 - [The Physical Society of Japan](https://www.jps.or.jp/english/) (09/2021 - Now)
 - [The Japan Society for Industrial and Applied Mathematics](https://jsiam.org/en/) (09/2022 - Now)
+- [The Japan Society of Fluid Mechanics](https://www.nagare.or.jp/en/index.html) (09/2019 - 03/2023)
 
 # Education
 
 - 04/2011 - 03/2014, Musashi High School
 - 04/2014 - 03/2018, Department of Applied Physics, School of Advanced Science and Engineering, Waseda Univ.
-- 04/2018 - 03/2020, Master's Program in Department of Pure and Applied Physics, Graduate School of Advanced Science and Engineering, Waseda Univ. (03/15/2020, Master of Science)
-- 04/2020 - 03/2023, Doctoral Program in Department of Pure and Applied Physics, Graduate School of Advanced Science and Engineering, Waseda Univ. (03/15/20223, Doctor of Science)
+- 04/2018 - 03/2020, Master's Program in Department of Pure and Applied Physics, Graduate School of Advanced Science and Engineering, Waseda Univ. (03/15/2020, Master of Science, supervisor: Mitsuharu Ôtani)
+- 04/2020 - 03/2023, Doctoral Program in Department of Pure and Applied Physics, Graduate School of Advanced Science and Engineering, Waseda Univ. (03/15/20223, Doctor of Science, supervisor: Yoshihiro Yamazaki)
 
 # Occupation
 
-## Occupational history
-
 - 04/2020 - 03/2023, Research Fellow of Japan Society for the Promotion of Science (DC1), Waseda Univ.
 - 04/2023 - 09/2023, Post-Doctoral Fellow, Research Institute for Electronic Science, Hokkaido Univ.
-- 10/2023 - Now,     (Specially Appointed) Assistant Professor, Research Institute for Electronic Science, Hokkaido Univ.
+- 10/2023 - <span style="color: red; ">now</span>,     (Specially Appointed) Assistant Professor, Research Institute for Electronic Science, Hokkaido Univ.
 
 # Awards
 
@@ -79,6 +78,14 @@ JDLA Deep Learning for GENERAL 2020 #2
 - Simple numerical simulation
 - Basic data analysis using pandas
 - Simple program to manage files in a PC
+
+## Julia (2021 - now)
+
+- Numerical simulation of differential equations
+
+## C++ (2023 - now)
+
+- Numerical simulation of differential equations
 
 # Updates
 
