@@ -12,7 +12,7 @@ This is the personal site of Keiichiro KAGAWA (香川渓一郎).
 
 # Affiliation
 
-(Specially Appointed) Assistant Professor, Research Institute for Electronic Science, Hokkaido Univ.
+[(Specially Appointed) Assistant Professor](https://www.es.hokudai.ac.jp/english/organization/profile/kagawa-keiichiro/), Research Institute for Electronic Science, Hokkaido Univ.
 
 [ORCID](https://orcid.org/0000-0002-4214-2029)
 
