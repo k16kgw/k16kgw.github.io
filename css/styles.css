@@ -1,0 +1,88 @@
+/* リセット・基本設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* コンテナ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ヘッダー */
+header {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2em;
+  padding: 10px 0;
+}
+
+/* ナビゲーション */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+/* メインコンテンツ */
+main section {
+  margin-bottom: 30px;
+}
+
+main h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+/* リスト */
+ul {
+  list-style: disc inside;
+  margin-left: 20px;
+}
+
+/* フッター */
+footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
