@@ -1,7 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keiichiro KAGAWA - HOME</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <div class="container header-container">
+      <h1>Keiichiro KAGAWA</h1>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">MYSELF</a></li>
+          <li><a href="#">PAPERS</a></li>
+          <li><a href="#">TALKS</a></li>
+          <li><a href="#">LINKS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+    <!-- HOME セクション -->
+    <section id="home">
+      <h2>HOME</h2>
+      <p>ここは香川渓一郎（KAGAWA Keiichiro）のWEBページです。</p>
+    </section>
+
+    <!-- 所属 -->
+    <section id="affiliation">
+      <h2>所属</h2>
+      <p>
+        北海道大学 電子科学研究所 附属社会創造数学研究センター 人間数理研究分野 
+        <a href="https://www.es.hokudai.ac.jp" target="_blank">特任助教</a>
+      </p>
+      <p>
+        <a href="https://researchmap.jp" target="_blank">researchmap</a> ,
+        <a href="https://orcid.org" target="_blank">ORCID</a> ,
+        <a href="https://scholar.google.co.jp" target="_blank">google scholar</a>
+      </p>
+    </section>
+    
+    <!-- 連絡先 -->
+    <section id="contact">
+      <h2>連絡先</h2>
+      <p>E-mail: kkagawa＿あっと＿es.hokudai.ac.jp (<span>＿あっと＿→@</span>)</p>
+      <p>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> ,
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      </p>
+    </section>
+    
+    <!-- 研究内容 -->
+    <section id="research">
+      <h2>研究内容</h2>
+      <p>
+        非線形偏微分方程式の解の適切性やダイナミクスを研究しています。特に合金における相分離現象であるスピノーダル分解を記述する数理モデルであるCahn–Hilliard方程式について、初期値問題・時間周期問題の適切性を Dirichlet 境界条件や動的境界条件の下で研究しています。自然現象をモデル化して導出された方程式がモデルとして数学的に適切かどうかを判断する上で、問題の適切性は最低限必要な条件です。さらに数値シミュレーション結果の妥当性を理論的に保証する基礎ともなります。近年は境界での未知関数の時間発展を考慮した動的境界条件を課した問題について、関数解析を活用した解の適切性や、数値シミュレーションを活用した解のダイナミクスを調べる研究を行っています。
+      </p>
+      <p>
+        また、ポスドクとして皮膚の付属器官である毛包の形態形成を表現する数理モデルの構築とその数値シミュレーションを活用した現象の再現を行う研究に取り組んでいます。
+      </p>
+    </section>
+    
+    <!-- キーワード -->
+    <section id="keywords">
+      <h2>キーワード</h2>
+      <p>
+        非線型偏微分方程式・非線型発展方程式・函数解析、
+        解の適切性・初期値問題・時間周期問題・境界値問題・動的境界条件 (dynamic boundary condition)、
+        劣微分作用素・極大単調作用素・リプシッツ連続・アスコリの定理、
+        Cahn–Hilliard方程式・相分離現象、
+        非線形レイリー方程式、
+        データ分析・数値シミュレーション、
+        皮膚の数理モデル
+      </p>
+    </section>
+    
+    <!-- 資格 -->
+    <section id="qualifications">
+      <h2>資格</h2>
+      <ul>
+        <li>
+          JDLA Deep Learning for GENERAL（短縮 名称：G検定）2020 #2 合格者：
+          <a href="https://www.jdla.org" target="_blank">G検定について</a>、
+          <a href="https://www.jdla.org" target="_blank">2020年度第2回講評</a>：
+          <a href="https://www.openbadge-global.com" target="_blank">オープンバッジ</a>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- スキル -->
+    <section id="skills">
+      <h2>スキル（経験期間，内容）</h2>
+      
+      <h3>GitHub, Kaggle</h3>
+      <p>Contributer</p>
+      
+      <h3>LaTeX（2014年〜現在）</h3>
+      <ul>
+        <li>レポートや講義資料の執筆</li>
+        <li>論文執筆</li>
+        <li>講演スライドの作成</li>
+      </ul>
+      
+      <h3>Python（2019年〜現在）</h3>
+      <ul>
+        <li>NumPyやSciPyなどのモジュールを用いた数値シミュレーション</li>
+        <li>pandasなどのモジュールを用いたデータ分析</li>
+        <li>PC内のファイルを管理する簡単なプログラム</li>
+        <li><a href="https://github.com" target="_blank">関数のライブラリ</a></li>
+        <li>
+          主な成果：
+          <ul>
+            <li>香川渓一郎他, "卓球の試合全体に対する３次元座標推定", 統計数理研究所共同研究リポート (2022)</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <h3>Julia（2021年〜現在）</h3>
+      <ul>
+        <li>微分方程式の数値シミュレーション</li>
+        <li>
+          主な成果：
+          <ul>
+            <li>
+              K. Kagawa, Y. Yamazaki, "Critical slowing down for relaxation in the Cahn–Hilliard equation with dynamic boundary conditions", JSIAM Letters, Vol.16 (2024) 73-76.
+              <a href="https://doi.org/10.14495/jsiaml.16.73" target="_blank">DOI</a>
+            </li>
+            <li>香川渓一郎, "Mathematical and Numerical Analysis of the Cahn–Hilliard Equation", 早稲田大学大学院博士論文 (2023)</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <h3>C++（2023年〜現在）</h3>
+      <ul>
+        <li>微分方程式やエージェントモデルを組み合わせた数理モデルの数値シミュレーション</li>
+        <li>
+          主な成果：
+          <ul>
+            <li>香川渓一郎他, "線維芽細胞に注目した毛包形態形成の数理モデル", 計算工学講演会論文集, Vol.29 (2024)</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <h3>補助的なスキル</h3>
+      <ul>
+        <li>C言語（2015年、2023年） - 数理科学演習（北海道大学・2023年後期）を担当</li>
+        <li>シェルスクリプト（2023年〜） - Linuxマシンでのプログラム実行の自動化</li>
+        <li>簡単なWebアプリ開発 - wordle-analysis（サービス終了）：Wordleの途中結果を入力すると、答えの候補となる単語一覧を出力する。</li>
+        <li>Octave（2018年、Coursera の Machine Learning の講義で使用した程度）</li>
+        <li>Matlab（2016年、講義で学んだ程度） - 3つの天体の運動の簡単なシミュレーション</li>
+        <li>Illustrator・InDesign（2014年〜2016年、趣味で時々触る程度） - ものづくり工房でのポスター制作、理工展連絡会での卒業アルバム制作</li>
+        <li>Photoshop・lightroom（2014年〜2016年、2023年） - 趣味で撮る写真を編集</li>
+      </ul>
+    </section>
+    
+    <!-- 更新情報 -->
+    <section id="updates">
+      <h2>更新情報</h2>
+      <ul>
+        <li>2024/11/01 北大カレンダー2025の2月面に写真が採用されました。</li>
+        <li>2024/10/02 研究内容・キーワードを加筆・修正しました。貢献に所属研究室でのゼミ指導内容を加筆しました。 → <a href="#">MYSELF</a></li>
+        <li>2024/09/26 第18回応用数理研究会にて講演を行いました。 → <a href="#">TALKS</a></li>
+        <li>2024/09/19 2024年度バイオメカニクス研究会にて招待講演を行いました。 → <a href="#">TALKS</a></li>
+        <li>2024/09/16 日本応用数理学会2024年度年会にて講演を行いました。 → <a href="#">TALKS</a></li>
+        <li>2024/09/13 山崎義弘先生との共同研究成果が出版されました。 → <a href="#">PAPERS</a></li>
+        <li>全件は → <a href="#">LOG</a></li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container footer-container">
+      <p>Google Sites &copy; Keiichiro KAGAWA</p>
+    </div>
+  </footer>
 </body>
 </html>
