@@ -4,29 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Keiichiro KAGAWA - HOME</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
+  <!-- ヘッダー（固定ナビゲーション） -->
   <header>
     <div class="container header-container">
+      <!-- 左側にサイト名 -->
       <h1>Keiichiro KAGAWA</h1>
+      <!-- 右側にナビメニュー。各々のセクションへ飛ぶ（アンカーリンク） -->
       <nav>
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">MYSELF</a></li>
-          <li><a href="#">PAPERS</a></li>
-          <li><a href="#">TALKS</a></li>
-          <li><a href="#">LINKS</a></li>
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="#myself">MYSELF</a></li>
+          <li><a href="papers.html">PAPERS</a></li>
+          <li><a href="talks.html">TALKS</a></li>
+          <li><a href="#links">LINKS</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
+  <!-- ヒーローセクション（大きな背景画像 + HOME文字） -->
+  <section id="home" class="hero">
+    <h2>HOME</h2>
+  </section>
+
+  <!-- コンテンツエリア開始 -->
   <main class="container">
-    <!-- HOME セクション -->
-    <section id="home">
-      <h2>HOME</h2>
+    <section id="introduction">
       <p>ここは香川渓一郎（KAGAWA Keiichiro）のWEBページです。</p>
+      <p>You can find English page at
+        <a href="https://k16kgw.github.io/" target="_blank">k16kgw.github.io</a>
+      </p>
     </section>
 
     <!-- 所属 -->
@@ -34,12 +45,12 @@
       <h2>所属</h2>
       <p>
         北海道大学 電子科学研究所 附属社会創造数学研究センター 人間数理研究分野 
-        <a href="https://www.es.hokudai.ac.jp" target="_blank">特任助教</a>
+        <a href="https://www.es.hokudai.ac.jp/organization/profile/kagawa-keiichiro/" target="_blank">特任助教</a>
       </p>
       <p>
-        <a href="https://researchmap.jp" target="_blank">researchmap</a> ,
-        <a href="https://orcid.org" target="_blank">ORCID</a> ,
-        <a href="https://scholar.google.co.jp" target="_blank">google scholar</a>
+        <a href="https://researchmap.jp/keiichiro-kagawa/" target="_blank">researchmap</a> ,
+        <a href="https://orcid.org/0000-0002-4214-2029" target="_blank">ORCID</a> ,
+        <a href="https://scholar.google.co.jp/citations?hl=ja&user=8WoSQZgAAAAJ" target="_blank">google scholar</a>
       </p>
     </section>
     
@@ -48,8 +59,8 @@
       <h2>連絡先</h2>
       <p>E-mail: kkagawa＿あっと＿es.hokudai.ac.jp (<span>＿あっと＿→@</span>)</p>
       <p>
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> ,
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/in/keiichirokagawa/" target="_blank">LinkedIn</a> ,
+        <a href="http://facebook.com/kagawa.keiichiro" target="_blank">Facebook</a>
       </p>
     </section>
     
@@ -57,7 +68,10 @@
     <section id="research">
       <h2>研究内容</h2>
       <p>
-        非線形偏微分方程式の解の適切性やダイナミクスを研究しています。特に合金における相分離現象であるスピノーダル分解を記述する数理モデルであるCahn–Hilliard方程式について、初期値問題・時間周期問題の適切性を Dirichlet 境界条件や動的境界条件の下で研究しています。自然現象をモデル化して導出された方程式がモデルとして数学的に適切かどうかを判断する上で、問題の適切性は最低限必要な条件です。さらに数値シミュレーション結果の妥当性を理論的に保証する基礎ともなります。近年は境界での未知関数の時間発展を考慮した動的境界条件を課した問題について、関数解析を活用した解の適切性や、数値シミュレーションを活用した解のダイナミクスを調べる研究を行っています。
+        非線形偏微分方程式の解の適切性やダイナミクスを研究しています。
+        特に合金における相分離現象であるスピノーダル分解を記述する数理モデルであるCahn–Hilliard方程式について、初期値問題・時間周期問題の適切性を Dirichlet 境界条件や動的境界条件の下で研究しています。
+        自然現象をモデル化して導出された方程式がモデルとして数学的に適切かどうかを判断する上で、問題の適切性は最低限必要な条件です。さらに数値シミュレーション結果の妥当性を理論的に保証する基礎ともなります。
+        近年は境界での未知関数の時間発展を考慮した動的境界条件を課した問題について、関数解析を活用した解の適切性や、数値シミュレーションを活用した解のダイナミクスを調べる研究を行っています。
       </p>
       <p>
         また、ポスドクとして皮膚の付属器官である毛包の形態形成を表現する数理モデルの構築とその数値シミュレーションを活用した現象の再現を行う研究に取り組んでいます。
@@ -69,12 +83,21 @@
       <h2>キーワード</h2>
       <p>
         非線型偏微分方程式・非線型発展方程式・函数解析、
+        <br>
         解の適切性・初期値問題・時間周期問題・境界値問題・動的境界条件 (dynamic boundary condition)、
+        <br>
         劣微分作用素・極大単調作用素・リプシッツ連続・アスコリの定理、
+        <br>
         Cahn–Hilliard方程式・相分離現象、
+      </p>
+      <p>
         非線形レイリー方程式、
+      </p>
+      <p>
         データ分析・数値シミュレーション、
-        皮膚の数理モデル
+      </p>
+      <p>
+        皮膚の数理モデル・バネ＝ビーズモデル (bead–spring model)
       </p>
     </section>
     
@@ -84,9 +107,9 @@
       <ul>
         <li>
           JDLA Deep Learning for GENERAL（短縮 名称：G検定）2020 #2 合格者：
-          <a href="https://www.jdla.org" target="_blank">G検定について</a>、
-          <a href="https://www.jdla.org" target="_blank">2020年度第2回講評</a>：
-          <a href="https://www.openbadge-global.com" target="_blank">オープンバッジ</a>
+          （<a href="https://www.jdla.org/certificate/general/" target="_blank">G検定について</a>、
+          <a href="https://www.jdla.org/news/20200716001/" target="_blank">2020年度第2回講評</a>）：
+          <a href="https://www.openbadge-global.com/api/v1.0/openBadge/v2/Wallet/Public/GetAssertionShare/clBUL1JNRkV0a2kzZ1FiUTRWYUNnQT09" target="_blank">オープンバッジ</a>
         </li>
       </ul>
     </section>
@@ -94,9 +117,10 @@
     <!-- スキル -->
     <section id="skills">
       <h2>スキル（経験期間，内容）</h2>
-      
-      <h3>GitHub, Kaggle</h3>
-      <p>Contributer</p>
+      <p>
+        <a href="https://github.com/k16kgw?tab=repositories" target="_blank">GitHub</a>, 
+        <a href="https://www.kaggle.com/k16kgw" target="_blank">Kaggle</a> (Contributer)
+      </p>
       
       <h3>LaTeX（2014年〜現在）</h3>
       <ul>
@@ -110,7 +134,7 @@
         <li>NumPyやSciPyなどのモジュールを用いた数値シミュレーション</li>
         <li>pandasなどのモジュールを用いたデータ分析</li>
         <li>PC内のファイルを管理する簡単なプログラム</li>
-        <li><a href="https://github.com" target="_blank">関数のライブラリ</a></li>
+        <li><a href="https://github.com/keikagawa/kkgw" target="_blank">関数のライブラリ</a></li>
         <li>
           主な成果：
           <ul>
@@ -127,7 +151,7 @@
           <ul>
             <li>
               K. Kagawa, Y. Yamazaki, "Critical slowing down for relaxation in the Cahn–Hilliard equation with dynamic boundary conditions", JSIAM Letters, Vol.16 (2024) 73-76.
-              <a href="https://doi.org/10.14495/jsiaml.16.73" target="_blank">DOI</a>
+              <a href="https://doi.org/10.14495/jsiaml.16.73" target="_blank">DOI:10.14495/jsiaml.16.73</a>
             </li>
             <li>香川渓一郎, "Mathematical and Numerical Analysis of the Cahn–Hilliard Equation", 早稲田大学大学院博士論文 (2023)</li>
           </ul>
@@ -153,7 +177,7 @@
         <li>Octave（2018年、Coursera の Machine Learning の講義で使用した程度）</li>
         <li>Matlab（2016年、講義で学んだ程度） - 3つの天体の運動の簡単なシミュレーション</li>
         <li>Illustrator・InDesign（2014年〜2016年、趣味で時々触る程度） - ものづくり工房でのポスター制作、理工展連絡会での卒業アルバム制作</li>
-        <li>Photoshop・lightroom（2014年〜2016年、2023年） - 趣味で撮る写真を編集</li>
+        <li>Photoshop・lightroom（2014年〜2016年、2023年〜） - 趣味で撮る写真を編集</li>
       </ul>
     </section>
     
@@ -161,17 +185,25 @@
     <section id="updates">
       <h2>更新情報</h2>
       <ul>
-        <li>2024/11/01 北大カレンダー2025の2月面に写真が採用されました。</li>
-        <li>2024/10/02 研究内容・キーワードを加筆・修正しました。貢献に所属研究室でのゼミ指導内容を加筆しました。 → <a href="#">MYSELF</a></li>
-        <li>2024/09/26 第18回応用数理研究会にて講演を行いました。 → <a href="#">TALKS</a></li>
-        <li>2024/09/19 2024年度バイオメカニクス研究会にて招待講演を行いました。 → <a href="#">TALKS</a></li>
-        <li>2024/09/16 日本応用数理学会2024年度年会にて講演を行いました。 → <a href="#">TALKS</a></li>
-        <li>2024/09/13 山崎義弘先生との共同研究成果が出版されました。 → <a href="#">PAPERS</a></li>
+        <li>2025/03/21 日本数学会2025年度年会にて講演を行いました。→ TALKS</li>
+        <li>2025/03/16 若手数学者交流会2025にてポスター発表を行いました。→ TALKS</li>
+        <li>2025/02/20 長山雅晴先生と共著の解説記事が出版されました。→ PAPERS </li>
+        <li>2025/01/09 学術変革領域研究(A)マルチモダルECM若手の会2025にて講演を行い、優秀発表賞（ポスドク部門）を受賞しました。 → TALKS</li>
+        <li>2024/12/17 CREST多細胞領域第6回領域会議にてポスター発表を行いました。→ TALKS</li>
+        <li>2024/12/10 The 25th RIES-HOKUDAI International Symposiumにてポスター発表を行いました。→ TALKS</li>
+        <li>2024/12/06 2024年度応用数学合同研究集会にて講演を行いました。→ TALKS </li>
+        <li>2024/11/01 北大カレンダー2025の2月面に写真が採用されました。</li>
+        <li>2024/10/02 研究内容・キーワードを加筆・修正しました。貢献に所属研究室でのゼミ指導内容を加筆しました。 → <a href="#">MYSELF</a></li>
+        <li>2024/09/26 第18回応用数理研究会にて講演を行いました。 → <a href="#">TALKS</a></li>
+        <li>2024/09/19 2024年度バイオメカニクス研究会にて招待講演を行いました。 → <a href="#">TALKS</a></li>
+        <li>2024/09/16 日本応用数理学会2024年度年会にて講演を行いました。 → <a href="#">TALKS</a></li>
+        <li>2024/09/13 山崎義弘先生との共同研究成果が出版されました。 → <a href="#">PAPERS</a></li>
         <li>全件は → <a href="#">LOG</a></li>
       </ul>
     </section>
   </main>
   
+  <!-- フッター -->
   <footer>
     <div class="container footer-container">
       <p>Google Sites &copy; Keiichiro KAGAWA</p>
