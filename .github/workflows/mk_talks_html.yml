@@ -1,0 +1,34 @@
+name: Update Talks HTML
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - data/talks.csv
+      - transform/generate_talks_html.py
+
+jobs:
+  update_html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリのチェックアウト
+        uses: actions/checkout@v3
+
+      - name: Pythonのセットアップ
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: talks.html の生成
+        run: python ./transform/generate_talks_html.py
+
+      - name: 生成された talks.html をコミット＆プッシュ
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add talks.html
+          git commit -m "Update talks.html based on talks.csv" || echo "No changes to commit"
+          git push
