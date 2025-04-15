@@ -64,8 +64,8 @@ def convert_csv(input_file, output_file):
 
 if __name__ == "__main__":
     # 入力・出力ファイルのパス
-    input_csv = "./data/talks.csv"
-    output_csv = "./data/talks4kakenhi.csv"
+    input_csv = "data/talks.csv"
+    output_csv = "data/talks4kakenhi.csv"
     
     if not os.path.exists(input_csv):
         print(f"入力ファイル '{input_csv}' が見つかりません。")
