@@ -22,14 +22,23 @@ def generate_html(csv_file, html_file):
             english_suffix = " (English)" if english_flag == "1" else ""
             
             # 会議名に括弧が含まれていれば、リンクテキストと括弧内の補足情報を分割
-            if "(" in conf:
-                anchor_text, rest = conf.split("(", 1)
+            if "（" in conf:
+                anchor_text, rest = conf.split("（", 1)
                 anchor_text = anchor_text.strip()
-                rest = rest.rstrip(") ").strip()
-                conf_html = f'<a href="{conf_link}" target="_blank">{anchor_text}</a> ({rest}) ({period})'
+                # rest は全角左括弧「（」を先頭に追加し、右側に全角右括弧「）」がある場合はそのまま残す（不要なら消してもよい）
+                rest = "（" + rest.strip()
+                # period の値がある場合は、後ろに括弧付き period を付与する
+                if period:
+                    conf_html = f'<a href="{conf_link}" target="_blank">{anchor_text}</a>{rest}({period})'
+                else:
+                    conf_html = f'<a href="{conf_link}" target="_blank">{anchor_text}</a>{rest}'
             else:
-                conf_html = f'<a href="{conf_link}" target="_blank">{conf}</a> ({period})'
-            
+                # もし全角括弧がなければ、単純にリンクと period を出力
+                if period:
+                    conf_html = f'<a href="{conf_link}" target="_blank">{conf}</a> ({period})'
+                else:
+                    conf_html = f'<a href="{conf_link}" target="_blank">{conf}</a>'
+
             li_item = (
                 f'        <li>\n'
                 f'          {invited_prefix}{presenter}, \n'
