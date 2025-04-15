@@ -124,6 +124,51 @@ section h2 {
   padding-bottom: 5px;
 }
 
+/* 各行を Flex コンテナに */
+.entry {
+  display: flex;
+  align-items: baseline; /* 文字のベースラインを揃える */
+  margin-bottom: 0.5em;
+}
+
+/* 日付部分（必要なら幅を指定） */
+.entry .period {
+  width: 180px;
+  flex-shrink: 0;
+}
+/* 職位 */
+.entry .position {
+  flex-grow: 1;
+}
+
+/* 日付 */
+.entry .date {
+  width: 120px;
+  flex-shrink: 0;
+}
+/* 課程 */
+.entry .cource {
+  width: 240px;
+  flex-shrink: 0;
+}
+/* 残りの部分 */
+.entry .other {
+  flex-grow: 0;
+}
+/* 学位 */
+.entry .degree {
+  width: 100px;
+  flex-shrink: 0;
+}
+/* 論文題 */
+.entry .title {
+  flex-shrink: 0;
+}
+.entry .society {
+  width: 180px;
+  flex-shrink: 0;
+}
+
 /*********************************************
   フッター
 *********************************************/
