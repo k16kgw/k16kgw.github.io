@@ -26,7 +26,7 @@ def generate_html(csv_file, html_file):
                 anchor_text, rest = conf.split("(", 1)
                 anchor_text = anchor_text.strip()
                 rest = rest.rstrip(") ").strip()
-                conf_html = f'<a href="{conf_link}" target="_blank">{anchor_text}</a> ({rest}, {period})'
+                conf_html = f'<a href="{conf_link}" target="_blank">{anchor_text}</a> ({rest}) ({period})'
             else:
                 conf_html = f'<a href="{conf_link}" target="_blank">{conf}</a> ({period})'
             
