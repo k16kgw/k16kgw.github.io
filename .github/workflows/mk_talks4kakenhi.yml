@@ -1,0 +1,36 @@
+name: CSV変換ワークフロー
+
+on:
+  push:
+    branches: [main]         # main ブランチへの push 時に実行（必要に応じてブランチを変更）
+    paths:
+      - talks.csv                # talks.csv に変更があった場合にトリガーする
+      - mk_talks4kakenhi.py         # mk_talks4kakenhi.py の変更でもトリガーする
+
+jobs:
+  transform_csv:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリのチェックアウト
+        uses: actions/checkout@v3
+
+      - name: Pythonのセットアップ
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'  # 適宜バージョンを指定
+
+      - name: mk_talks4kakenhi.py の実行
+        run: python mk_talks4kakenhi.py
+
+      - name: 生成されたtalks4kakenhi.csvをコミット＆プッシュ
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # GitHub Actions でコミットするためのユーザ設定
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          # 変更があれば talks4kakenhi.csv をコミット
+          git add talks4kakenhi.csv
+          git diff --quiet && echo "変更なし" || git commit -m "自動生成: talks.csvの変更に伴うtalks4kakenhi.csv更新"
+          git push
