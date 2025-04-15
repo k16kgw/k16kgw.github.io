@@ -4,8 +4,8 @@ on:
   push:
     branches: [master]         # main ブランチへの push 時に実行（必要に応じてブランチを変更）
     paths:
-      - ./data/talks.csv                # talks.csv に変更があった場合にトリガーする
-      - ./transform/mk_talks4kakenhi.py         # mk_talks4kakenhi.py の変更でもトリガーする
+      - data/talks.csv                # talks.csv に変更があった場合にトリガーする
+      - transform/mk_talks4kakenhi.py         # mk_talks4kakenhi.py の変更でもトリガーする
 
 jobs:
   transform_csv:
