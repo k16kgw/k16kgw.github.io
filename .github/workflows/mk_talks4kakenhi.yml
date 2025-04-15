@@ -21,7 +21,7 @@ jobs:
           python-version: '3.9'  # 適宜バージョンを指定
 
       - name: mk_talks4kakenhi.py の実行
-        run: python ./transform/mk_talks4kakenhi.py
+        run: python transform/mk_talks4kakenhi.py
 
       - name: 生成されたtalks4kakenhi.csvをコミット＆プッシュ
         env:
@@ -31,6 +31,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           # 変更があれば talks4kakenhi.csv をコミット
-          git add ./data/talks4kakenhi.csv
+          git add data/talks4kakenhi.csv
           git diff --quiet && echo "変更なし" || git commit -m "自動生成: talks.csvの変更に伴うtalks4kakenhi.csv更新"
           git push
