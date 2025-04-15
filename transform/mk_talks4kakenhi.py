@@ -1,26 +1,14 @@
-import argparse
-import pandas as pd
-
-def transform_csv(input_file, output_file):
-    # 入力 CSV を読み込み
-    df = pd.read_csv(input_file)
-
-    # 例: 各列名の左右の空白を除去し、小文字に変換
-    df.columns = [col.strip().lower() for col in df.columns]
-
-    # 例: 文字列データについて、各セルの余分な空白を除去
-    for col in df.select_dtypes(include='object').columns:
-        df[col] = df[col].str.strip()
-
-    # 例: 列の順序をアルファベット順に並べ替え
-    df = df[sorted(df.columns)]
-
-    # 整形後の DataFrame を新たな CSV ファイルとして出力（index は不要）
-    df.to_csv(output_file, index=False)
-    print(f"整形した CSV を {output_file} に保存しました。")
-
 import csv
 import os
+
+def replace_unencodable(text):
+    # \xd4 が発生する文字列を想定して、適切な置換を行います。
+    # ここでは例として "\xd4" をハイフン "-" に置換していますが、
+    # 必要に応じて適切な置換文字に変更してください。
+    text = text.replace('\xd4', '-')
+    # 前回の例でのen dashも置換
+    text = text.replace('\u2013', '-')
+    return text
 
 def convert_csv(input_file, output_file):
     with open(input_file, mode='r', encoding='utf-8', newline='') as fin, \
@@ -34,19 +22,16 @@ def convert_csv(input_file, output_file):
         writer = csv.writer(fout)
         
         for row in reader:
-            # 発表者名：カンマ区切りからセミコロン区切りに変更
-            presenter = row["発表者"].strip()
-            # もしフィールド内に " が含まれている場合は除去
-            presenter = presenter.replace('"', '')
-            # 名前間のカンマをセミコロンに置換
+            # 発表者名：カンマ区切りからセミコロン区切りに変換
+            presenter = replace_unencodable(row["発表者"].strip().replace('"', ''))
             presenter = ';'.join([name.strip() for name in presenter.split(',')])
             
-            # 発表標題：そのまま
-            title = row["タイトル"].strip()
+            # 発表標題
+            title = replace_unencodable(row["タイトル"].strip())
             
-            # 学会等名：そのまま（会議名）
-            conference = row["会議名"].strip()
-            
+            # 学会等名
+            conference = replace_unencodable(row["会議名"].strip())
+
             # 発表年は「発表日」列の日付（例："2025/01/09"）から年を抽出
             pub_date = row["発表日"].strip()
             if pub_date:
@@ -79,20 +64,11 @@ def convert_csv(input_file, output_file):
 
 if __name__ == "__main__":
     # 入力・出力ファイルのパス
-    input_csv = "talks.csv"
-    output_csv = "talks4kakenhi.csv"
+    input_csv = "./data/talks.csv"
+    output_csv = "./data/talks4kakenhi.csv"
     
     if not os.path.exists(input_csv):
         print(f"入力ファイル '{input_csv}' が見つかりません。")
     else:
         convert_csv(input_csv, output_csv)
         print(f"変換が完了しました。'{output_csv}' をご確認ください。")
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='CSV を整形して別ファイルに出力します')
-    parser.add_argument('input_file', help='入力 CSV ファイル（更新されたファイル）')
-    parser.add_argument('output_file', help='出力 CSV ファイル')
-    args = parser.parse_args()
-
-    transform_csv(args.input_file, args.output_file)
