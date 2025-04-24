@@ -1,0 +1,80 @@
+import csv
+import os
+
+def replace_unencodable(text):
+    # \xd4 が発生する文字列を想定して、適切な置換を行います。
+    # ここでは例として "\xd4" をハイフン "-" に置換していますが、
+    # 必要に応じて適切な置換文字に変更してください。
+    text = text.replace('\xd4', '-')
+    # 前回の例でのen dashも置換
+    text = text.replace('\u2013', '-')
+    return text
+
+def convert_csv(input_file, output_file):
+    with open(input_file, mode='r', encoding='utf-8', newline='') as fin, \
+         open(output_file, mode='w', encoding='shift_jis', newline='') as fout:
+        
+        reader = csv.DictReader(fin)
+        # 出力するB.csvのヘッダー（カラム名）
+        # fieldnames = [
+        #     区分（論文情報は「１」、根拠データは「２」を入力）,論文番号,根拠データ番号,掲載論文のDOI,著者名,
+        #     論文標題,雑誌名,巻,発行年,最初と最後の頁,
+        #     査読の有無,国際共著,オープンアクセス,掲載論文の根拠データ（DOI）,掲載論文の根拠データ（URL）,
+        #     データの名称,データの説明,データの分野【項目から選択制】,データ種別【項目から選択制】,管理対象データの利活用・提供方針,
+        #     リポジトリ情報,データ管理機関,データ管理部署,データ管理部署の連絡先メールアドレス
+        # ]
+        # writer = csv.DictWriter(fout, fieldnames=fieldnames)
+        # writer.writeheader()
+        writer = csv.writer(fout)
+        
+        for row in reader:
+            # 発表者名：カンマ区切りからセミコロン区切りに変換
+            author = replace_unencodable(row["著者"].strip().replace('"', ''))
+            author = ';'.join([name.strip() for name in author.split(',')])
+            
+            # 発表標題
+            title = replace_unencodable(row["タイトル"].strip())
+            
+            # 学会等名
+            conference = replace_unencodable(row["会議名"].strip())
+
+            # 発表年は「発表日」列の日付（例："2025/01/09"）から年を抽出
+            pub_date = row["発表日"].strip()
+            if pub_date:
+                # 日付の最初の部分(年)を抽出
+                pub_year = pub_date.split('/')[0]
+            else:
+                pub_year = ""
+            
+            # 招待講演：値が存在する場合は1、なければ0（サンプルは空 → 0）
+            invite = row["招待"].strip()
+            invite_flag = "1" if invite else "0"
+            
+            # 国際学会：英語列の値が存在する場合は1、なければ0（サンプルは空 → 0）
+            international = row["英語"].strip()
+            international_flag = "1" if international else "0"
+            
+            # 出力用の行を作成
+            # out_row = {
+            #     "発表者名": author,
+            #     "発表標題": title,
+            #     "学会等名": conference,
+            #     "発表年（始）": pub_year,
+            #     "発表年（終）": pub_year,
+            #     "招待講演": invite_flag,
+            #     "国際学会": international_flag
+            # }
+            # B.csv の列の順番に合わせたリストを作成
+            out_row = [author, title, conference, pub_year, pub_year, invite_flag, international_flag]
+            writer.writerow(out_row)
+
+if __name__ == "__main__":
+    # 入力・出力ファイルのパス
+    input_csv = "data/talks.csv"
+    output_csv = "data/talks4kakenhi.csv"
+    
+    if not os.path.exists(input_csv):
+        print(f"入力ファイル '{input_csv}' が見つかりません。")
+    else:
+        convert_csv(input_csv, output_csv)
+        print(f"変換が完了しました。'{output_csv}' をご確認ください。")

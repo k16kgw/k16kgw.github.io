@@ -1,1 +1,2 @@
 （SHIFT-JISで保存）区分（1:論文情報;2:根拠データ情報）,論文番号,根拠データ番号,DOI,著者名,論文標題,雑誌名,巻,発行年,最初と最後の頁,査読の有無,国際共著,オープンアクセス,掲載論文の根拠データ(DOI),掲載論文の根拠データ(URL),データの名称,データの説明,データの分野（「自然科学一般」で良い）,データ種別（「シミュレーションデータ」で良い）,管理対象データの利活用・提供方針,リポジトリ情報,データ管理機関,データ管理部署,データ管理部署の連絡先メールアドレス
+1,1,0,10.14495/jsiaml.16.73,K. Kagawa; Y. Yamazaki,Critical slowing down for relaxation in the Cahn–Hilliard equation with dynamic boundary conditions,JSIAM Letters,16,2024,73-76,1,0,1,,,,,,,,,,,

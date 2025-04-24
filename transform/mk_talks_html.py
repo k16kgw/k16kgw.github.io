@@ -1,7 +1,19 @@
 import csv
+import re
+
+def convert_markdown_link_to_html(text):
+    """
+    Markdown形式のリンク [URL](label) を HTML の<a href="URL">label</a>に変換する。
+    """
+    pattern = r'\[(.*?)\]\((.*?)\)'
+    # 正規表現の各マッチで、グループ1を href、グループ2を表示テキストとしてHTMLタグを生成
+    return re.sub(pattern, lambda m: f'<a href="{m.group(1)}">{m.group(2)}</a>', text)
+
 
 def generate_html(csv_file, html_file):
-    talks_items = []
+    items_poster = []
+    items_review_talk = []
+    items_nonreview_talk = []
     # CSV はヘッダー行がある想定（列名が以下の順番で設定されている）
     # 発表者, タイトル, 会議名, 会議リンク, 会議期間, 開催地, 発表日, 備考, 査読, 招待, 英語, ポスター
     with open(csv_file, newline='', encoding='utf-8') as csv_f:
@@ -14,9 +26,16 @@ def generate_html(csv_file, html_file):
             period    = row["会議期間"].strip()
             venue     = row["開催地"].strip()
             date      = row["発表日"].strip()
-            # 招待フラグ、英語フラグはそれぞれ "1" なら有効
+            # 補足事項
+            other     = row["備考"].strip()
+            other = convert_markdown_link_to_html(other)# Markdownリンクが含まれていたら変換する
+            special   = row["特筆事項"].strip()
+            special = convert_markdown_link_to_html(special)
+            # フラグはそれぞれ "1" なら有効
+            review_flag  = row["査読"].strip()
             invited_flag = row["招待"].strip()
             english_flag = row["英語"].strip()
+            poster_flag  = row["ポスター"].strip()
             
             invited_prefix = "(Invited) " if invited_flag == "1" else ""
             english_suffix = " (English)" if english_flag == "1" else ""
@@ -39,17 +58,46 @@ def generate_html(csv_file, html_file):
                 else:
                     conf_html = f'<a href="{conf_link}" target="_blank">{conf}</a>'
 
-            li_item = (
-                f'        <li>\n'
-                f'          {invited_prefix}{presenter}, \n'
-                f'          "{title}", \n'
-                f'          {conf_html}, \n'
-                f'          {venue}, {date}.{english_suffix}\n'
-                f'        </li>'
-            )
-            talks_items.append(li_item)
-    
+            if poster_flag:
+                li_item_poster = (
+                    f'        <li>\n'
+                    f'          {invited_prefix}{presenter}, \n'
+                    f'          "{title}", \n'
+                    f'          {conf_html}, \n'
+                    f'          {venue}, {date}.{english_suffix} \n'
+                    f'          {other} <b>{special}</b>\n'
+                    f'        </li>'
+                )
+                items_poster.append(li_item_poster)
+            elif review_flag:
+                li_item_review_talk = (
+                    f'        <li>\n'
+                    f'          {invited_prefix}{presenter}, \n'
+                    f'          "{title}", \n'
+                    f'          {conf_html}, \n'
+                    f'          {venue}, {date}.{english_suffix} \n'
+                    f'          {other} <b>{special}</b>\n'
+                    f'        </li>'
+                )
+                items_review_talk.append(li_item_review_talk)
+            else:           
+                li_item_nonreview_talk = (
+                    f'        <li>\n'
+                    f'          {invited_prefix}{presenter}, \n'
+                    f'          "{title}", \n'
+                    f'          {conf_html}, \n'
+                    f'          {venue}, {date}.{english_suffix}\n'
+                    f'          {other} <b>{special}</b>\n'
+                    f'        </li>'
+                )
+                items_nonreview_talk.append(li_item_nonreview_talk)
+
+    num_review = len(items_review_talk)
+    num_nonreview = len(items_nonreview_talk)
+    num_poster = len(items_poster)
+
     # HTML全体の構造（ヘッダー、ヒーローセクション、コンテンツ、フッター）
+    #chr(10).join は 改行文字(chr(10))を入れて結合している。
     html_template = f'''<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -83,9 +131,19 @@ def generate_html(csv_file, html_file):
   <!-- コンテンツエリア -->
   <main class="container">
     <section id="talks-content">
-      <h2>講演情報</h2>
+      <h2>口頭発表（査読あり）</h2>
+      <ol reversed start="{num_poster + num_nonreview + num_review}">
+{chr(10).join(items_review_talk)}
+      </ol>
+
+      <h2>口頭発表（査読なし）</h2>
+      <ol reversed start="{num_poster + num_nonreview}">
+{chr(10).join(items_nonreview_talk)}
+      </ol>
+
+      <h2>ポスター発表（査読なし）</h2>
       <ol reversed>
-{chr(10).join(talks_items)}
+{chr(10).join(items_poster)}
       </ol>
     </section>
   </main>
