@@ -34,15 +34,12 @@ This is the personal site of Keiichiro KAGAWA (香川渓一郎).
 
 - 04/2020 - 03/2023, Research Fellow of Japan Society for the Promotion of Science (DC1), Waseda Univ.
 - 04/2023 - 09/2023, Post-Doctoral Fellow, Research Institute for Electronic Science, Hokkaido Univ.
-- 10/2023 - <span style="color: red; ">now</span>,     (Specially Appointed) Assistant Professor, Research Institute for Electronic Science, Hokkaido Univ.
-
-# Awards
-
-- 小泉賞, 早稲田応用物理会・早稲田物理会
+- 10/2023 - 09/2025, (Specially Appointed) Assistant Professor, Research Institute for Electronic Science, Hokkaido Univ.
+- 10/2025 - <span style="color: red; ">now</span>,     Assistant Professor, Faculty of Science, Josai Univ.
 
 # Contact
 
-E-mail: heiankyo615あっとfuji.waseda.jp (change あっと to @)
+E-mail: kkagawaあっとjosai.ac.jp (change あっと to @)
 
 [LinkedIn](https://www.linkedin.com/in/%E6%B8%93%E4%B8%80%E9%83%8E-%E9%A6%99%E5%B7%9D-78768a183/)
 
@@ -60,10 +57,6 @@ well-posedness, initial/boundary value problem, time-periodic problem, dynamic b
 subdifferentional operator, maximal monotone operator, Lipschitz continuous;
 
 Cahn–Hilliard equation.
-
-# Qualification
-
-JDLA Deep Learning for GENERAL 2020 #2
 
 # Skills
 
@@ -89,4 +82,5 @@ JDLA Deep Learning for GENERAL 2020 #2
 
 # Updates
 
+- 2025/10/01    I have joined the Faculty of Science at Josai University as an Assistant Professor.
 - 2021/07/25    I published this page.
