@@ -187,10 +187,16 @@ table {
   width: 100%;
   table-layout: fixed;
 }
+
 th:first-child,
 td:first-child {
-  width: 6em;      /* 年度・番号用。調整可 */
+  width: 5.5em;
   white-space: nowrap;
+  font-weight: 600;
+}
+
+td {
+  word-break: break-word;
 }
 
 /* -----------------------------------------------------
