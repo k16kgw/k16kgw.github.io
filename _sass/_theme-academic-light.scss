@@ -1,31 +1,83 @@
 /* theme-academic-light.css */
+/* Academic Light (for jekyll-theme-slate) */
+
 :root {
-  --bg-color: #ffffff;
-  --text-color: #222;
-  --subtext-color: #555;
-  --accent-color: #003366; /* 濃い紺 */
-  --border-color: #ddd;
+  --bg: #ffffff;
+  --text: #222222;
+  --muted: #555555;
+  --accent: #003366;   /* deep navy */
+  --border: #dddddd;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background: var(--bg);
+  color: var(--text);
 }
 
-header {
-  background-color: rgba(255,255,255,0.95);
-  border-bottom: 1px solid var(--border-color);
+/* Slate wrappers */
+#header_wrap {
+  background: var(--bg) !important;
+  border-bottom: 1px solid var(--border);
 }
 
-nav ul li a {
-  color: var(--text-color);
+#project_title,
+#project_tagline {
+  color: var(--text);
+  text-shadow: none;
 }
 
-nav ul li a.active {
-  color: var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
+#main_content_wrap {
+  background: var(--bg) !important;
+  border-top: 0;
+  border-bottom: 0;
 }
 
-section h2 {
-  border-bottom: 2px solid var(--border-color);
+#main_content {
+  color: var(--text);
+}
+
+#footer_wrap {
+  background: #f8f8f8 !important;
+  border-top: 1px solid var(--border);
+}
+
+footer p,
+#footer_wrap,
+#footer_wrap a {
+  color: var(--muted);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  letter-spacing: 0;
+}
+
+h2 {
+  background: none;
+  border-bottom: 2px solid var(--border);
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul {
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul ul ul {
+  list-style-type: square;
 }
