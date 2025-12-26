@@ -43,29 +43,101 @@ title: top page
 
 ### 春学期
 
-<div class="t-first-2">
-
-| 時限 | 月 | 火 | 水 | 木 | 金 |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-|  1  |     |     |     |     |     |
-|  2  | フレッシュマンセミナーI |     |     |     |     |
-|  3  | ゲーム理論 | 応用プログラミングI |     | 数学セミナー |     |
-|  4  | ゲーム理論 | 応用プログラミングI |     | 数学セミナー |     |
-
-</div>
+<table class="t-first-2 timetable">
+  <thead>
+    <tr>
+      <th>時限</th>
+      <th>月</th>
+      <th>火</th>
+      <th>水</th>
+      <th>木</th>
+      <th>金</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>フレッシュマンセミナーI</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ゲーム理論</td>
+      <td>応用プログラミングI</td>
+      <td></td>
+      <td>数学セミナー</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>ゲーム理論</td>
+      <td>応用プログラミングI</td>
+      <td></td>
+      <td>数学セミナー</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 秋学期
 
-<div class="t-first-2">
-
-| 時限 | 月 | 火 | 水 | 木 | 金 |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-|  1  |     |     |     |     |     |
-|  2  | フレッシュマンセミナーII | 応用プログラミングII |     |     |     |
-|  3  |     | 応用プログラミングII |     | 数学セミナー |     |
-|  4  |     |     |     | 数学セミナー |     |
-
-</div>
+<table class="t-first-2 timetable">
+  <thead>
+    <tr>
+      <th>時限</th>
+      <th>月</th>
+      <th>火</th>
+      <th>水</th>
+      <th>木</th>
+      <th>金</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>フレッシュマンセミナーII</td>
+      <td>応用プログラミングII</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td>応用プログラミングII</td>
+      <td></td>
+      <td>数学セミナー</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>数学セミナー</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 # セミナーに配属されるまで
 
