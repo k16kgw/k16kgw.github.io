@@ -188,16 +188,25 @@ table {
   table-layout: fixed;
 }
 
-th:first-child,
-td:first-child {
-  width: 5.5em;
-  white-space: nowrap;
-  font-weight: 600;
-}
+.t-first-2 table th:first-child,
+.t-first-2 table td:first-child { width: 2em; white-space: nowrap; }
 
-td {
-  word-break: break-word;
-}
+.t-first-6 table th:first-child,
+.t-first-6 table td:first-child { width: 6em; white-space: nowrap; }
+
+// th {
+//   background: var(--josai-blue);
+//   color: #ffffff;
+//   border-bottom: 4px solid var(--josai-yellow);
+// }
+// td, th {
+//   border: 1px solid var(--border);
+//   padding: 8px 10px;
+//   vertical-align: top;
+// }
+// td {
+//   word-break: break-word;
+// }
 
 /* -----------------------------------------------------
    Code blocks
