@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 // }
 
 h2 {
+  background: none;
   border-bottom: 3px solid var(--josai-yellow);
   box-shadow: inset 0 -6px 0 var(--josai-blue);
 }
@@ -187,11 +188,11 @@ ul ul ul {
 //   width: 100%;
 //   table-layout: fixed;
 // }
-table.t-first-2 th:first-child,
-table.t-first-2 td:first-child { width: 2em; white-space: nowrap; }
+// table.t-first-2 th:first-child,
+// table.t-first-2 td:first-child { width: 2em; white-space: nowrap; }
 
-table.t-first-6 th:first-child,
-table.t-first-6 td:first-child { width: 6em; white-space: nowrap; }
+// table.t-first-6 th:first-child,
+// table.t-first-6 td:first-child { width: 6em; white-space: nowrap; }
 
 // th {
 //   background: var(--josai-blue);
@@ -206,6 +207,52 @@ table.t-first-6 td:first-child { width: 6em; white-space: nowrap; }
 // td {
 //   word-break: break-word;
 // }
+
+/* 表全体の共通 */
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+  background: #fff;
+}
+
+/* ヘッダ */
+th {
+  background: var(--josai-blue);
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 4px solid var(--josai-yellow);
+  padding: 10px 12px;
+  text-align: left; /* 基本は左 */
+}
+
+/* セル */
+td {
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 10px 12px;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+/* 行のホバー（黄色を “面で使いすぎない” よう薄く） */
+tbody tr:hover td {
+  background: #fff9d6; /* yellow-tint */
+}
+
+/* 表ごとの 1列目幅 */
+table.t-first-2  th:first-child,
+table.t-first-2  td:first-child { width: 2em; white-space: nowrap; }
+
+table.t-first-6  th:first-child,
+table.t-first-6  td:first-child { width: 6em; white-space: nowrap; }
+
+/* ★ 年月列（1列目）を右揃えに戻す（この表だけ） */
+table.t-first-6 th:first-child,
+table.t-first-6 td:first-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums; /* 数字が揃って見える（対応環境のみ） */
+}
 
 /* -----------------------------------------------------
    Code blocks
