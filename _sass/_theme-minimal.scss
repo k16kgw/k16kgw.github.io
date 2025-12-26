@@ -1,4 +1,16 @@
-/* テスト用：これが効かなければ import されていない */
-body {
-  background-color: red !important;
+/* slate の殻を剥がす（重要） */
+.page-header {
+  background: #fff !important;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.main-content {
+  background: transparent !important;
+  color: #000;
+}
+
+.site-footer {
+  background: #fff !important;
+  border-top: 2px solid #000;
 }
