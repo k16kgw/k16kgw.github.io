@@ -187,10 +187,8 @@ table {
   width: 100%;
   table-layout: fixed;
 }
-
 .t-first-2 table th:first-child,
 .t-first-2 table td:first-child { width: 2em; white-space: nowrap; }
-
 .t-first-6 table th:first-child,
 .t-first-6 table td:first-child { width: 6em; white-space: nowrap; }
 
