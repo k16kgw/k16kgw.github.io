@@ -4,83 +4,112 @@ title: top page
 
 ---
 
-# Top Page
+城西大学理学部情報数理学科 香川渓一郎セミナーのホームページです。
 
-This is the personal site of Keiichiro KAGAWA (香川渓一郎).
+香川渓一郎の個人に関する情報は[https://www.k16kgw.com](https://www.k16kgw.com)をご参照ください．
 
-日本語のページは [https://sites.google.com/view/keiichiro-kagawa](https://sites.google.com/view/keiichiro-kagawa) へ
+<!-- <span style="color: red; ">now</span> -->
 
-# Affiliation
+# 2026年度のスケジュール
 
-[Assistant Professor](https://researcher.josai.ac.jp/html/100001058_en.html), Faculty of Science, Josai University
+| 年月 | 事項 |
+| ---: | :--- |
+| 2025年12月 | セミナー説明会 |
+| 2026年1月 | 第1グループ希望提出 |
+| 2月 | 第2グループ希望提出 |
+| 3月 | 配属決定 |
+| 4月-7月 | 輪講 |
+| 8月-9月 | 個人研究テーマ決め |
+| 10月-12月 | 個人研究 |
+| 1月 | 個人研究取りまとめ |
 
-[ORCID](https://orcid.org/0000-0002-4214-2029)
+# セミナーに配属されるまで
 
-## Academies
+## 配属までに受講を要する・推奨する科目
 
-- [The Mathematical Society of Japan](https://www.mathsoc.jp/en/) (09/2018 - Now)
-- [The Physical Society of Japan](https://www.jps.or.jp/english/) (09/2021 - Now)
-- [The Japan Society for Industrial and Applied Mathematics](https://jsiam.org/en/) (09/2022 - Now)
-- [The Japan Society of Fluid Mechanics](https://www.nagare.or.jp/en/index.html) (09/2019 - 03/2023)
+- 解析学（2年次・必須）：本セミナーに参加するにあたり、解析学の基礎的な理解は必須です。
+- プログラミング入門・プログラミング（2年次・必須）：数値シミュレーションを行うにあたり、ここまでの履修は必須です。
+- 微分方程式論I・II（3年次・推奨）：履修していると輪講テキストの理解が捗ります。
+- 応用プログラミングI・II（3年次・推奨）：履修していると個人研究の可能性が広がります。
 
-# Education
+# セミナーの進め方
 
-- 04/2011 - 03/2014, Musashi High School
-- 04/2014 - 03/2018, Department of Applied Physics, School of Advanced Science and Engineering, Waseda Univ.
-- 04/2018 - 03/2020, Master's Program in Department of Pure and Applied Physics, Graduate School of Advanced Science and Engineering, Waseda Univ. (03/15/2020, Master of Science, supervisor: Mitsuharu Ôtani)
-- 04/2020 - 03/2023, Doctoral Program in Department of Pure and Applied Physics, Graduate School of Advanced Science and Engineering, Waseda Univ. (03/15/20223, Doctor of Science, supervisor: Yoshihiro Yamazaki)
+- 春学期：輪講
+- 秋学期：個人研究
 
-# Occupation
+## 輪講
 
-- 04/2020 - 03/2023, Research Fellow of Japan Society for the Promotion of Science (DC1), Waseda Univ.
-- 04/2023 - 09/2023, Post-Doctoral Fellow, Research Institute for Electronic Science, Hokkaido Univ.
-- 10/2023 - 09/2025, (Specially Appointed) Assistant Professor, Research Institute for Electronic Science, Hokkaido Univ.
-- 10/2025 - <span style="color: red; ">now</span>,     Assistant Professor, Faculty of Science, Josai Univ.
+輪講で読むテキスト
+- Steven Strogatz「ストロガッツ　非線形ダイナミクスとカオス」
 
-# Contact
+<!-- 参考になるテキスト -->
 
-E-mail: kkagawaあっとjosai.ac.jp (change あっと to @)
+## 個人研究
 
-[LinkedIn](https://www.linkedin.com/in/%E6%B8%93%E4%B8%80%E9%83%8E-%E9%A6%99%E5%B7%9D-78768a183/)
+- セミナー生は秋学期に実施する個人研究のテーマを夏休みの間に考えてくることが求められています。
+- 香川の研究テーマの枠に囚われず、各々が興味のある話題に挑戦することを推奨します。
+- 自分の研究テーマを見つけられないセミナー生には、香川の研究テーマから幾つかを紹介する事はできます。
 
-# Research Interests
+# 連絡先
 
-I'm studying the well-posedness of Cauchy/time-periodic problems of nonlinear evolution equations. Currently, I am studying the well-posedness of initial value and time-periodic problems of the Cahn–Hilliard equation, which was derived to describe spinodal decomposition, a phase separation phenomenon in alloys. Understanding well-posedness of problems is a minimum requirement to determine whether an equation derived by modeling a natural phenomenon is mathematically appropriate as a model or not. It also serves as a basis for theoretical assurance of the validity of numerical simulation results.
-I'm also interested in the numerical simulation of the Cahn–Hilliard equation.
+- E-mail: kkagawaあっとjosai.ac.jp (「あっと」を「@」に変換)
 
-# Keywords
+城西大学の学生は**E-mail**または**Teamsのチャット**で連絡をください。
 
-Nonlinear differential equation, nonlinear evolution equation, functional analysis;
+# 参考
 
-well-posedness, initial/boundary value problem, time-periodic problem, dynamic boundary condition;
+本セミナーを選択するにあたり参考となるであろう情報を記します。
 
-subdifferentional operator, maximal monotone operator, Lipschitz continuous;
 
-Cahn–Hilliard equation.
+## 香川の研究キーワード
 
-# Skills
+関数解析・微分方程式・解の存在と一意性・解の安定性・動的境界条件
 
-## LaTeX (2014 - now)
+相分離現象・Cahn–Hilliard方程式
 
-- Writing reports and lecture materials
-- Writing papers
-- Creating lecture slides
+数理モデリング・数値シミュレーション・生物の数理モデル
 
-## Python (2019 - now)
+データ分析・スポーツデータ解析
 
-- Simple numerical simulation
-- Basic data analysis using pandas
-- Simple program to manage files in a PC
+## 香川の研究内容
 
-## Julia (2021 - now)
+### Cahn–Hilliard方程式の数学解析
 
-- Numerical simulation of differential equations
+論文リスト
 
-## C++ (2023 - now)
+### Cahn–Hilliard方程式の数値シミュレーション
 
-- Numerical simulation of differential equations
+論文リスト
 
-# Updates
+**以下はこれまで取り組んでいた研究内容です。**
 
-- 2025/10/01    I have joined the Faculty of Science at Josai University as an Assistant Professor.
-- 2021/07/25    I published this page.
+### 皮膚の数理モデル
+
+論文リスト
+
+### スポーツデータ解析
+
+論文リスト
+
+
+### 非線形レイリー方程式の数学解析
+
+地震波動を記述する弾性方程式のうち、地表表面を伝播する表面波を記述する逓減非線形レイリー方程式について、プラズマ物理などの文脈で使われる手法を援用した解析を行っていました。
+
+論文リスト
+
+**以下はこれから始めようとしている研究内容です。**
+
+### 腸内細菌の数理モデル
+
+### 電磁波の回折現象の数学解析
+
+### ヴァーチャルテコンドーのデータ分析
+
+<!-- # 学生の研究内容 -->
+
+<!-- # スキル -->
+
+# 更新情報
+
+- 2025/12/26    ホームページを作成しました．
