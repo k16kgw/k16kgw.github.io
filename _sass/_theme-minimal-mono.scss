@@ -1,30 +1,47 @@
-/* theme-minimal-mono.css */
-:root {
-  --bg-color: #ffffff;
-  --text-color: #000;
-  --accent-color: #000;
-  --border-color: #000;
-}
+/* ===== minimal mono override for jekyll-theme-slate ===== */
 
+/* 全体 */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background: #2e7ce2;
+  color: #f1f36d;
+  font-family: "Times New Roman", "Noto Serif JP", serif;
 }
 
-header {
-  background-color: #fff;
+/* Header */
+#header_wrap {
+  background: #fff !important;
   border-bottom: 2px solid #000;
 }
 
-nav ul li a {
+#project_title,
+#project_tagline {
+  color: #000;
+  text-shadow: none;
+}
+
+/* Main */
+#main_content_wrap {
+  background: transparent !important;
+  border: none;
+}
+
+#main_content {
+  background: transparent;
+}
+
+/* Footer */
+#footer_wrap {
+  background: #fff !important;
+  border-top: 2px solid #000;
   color: #000;
 }
 
-nav ul li a.active {
-  font-weight: bold;
-  border-bottom: 2px solid #000;
+/* Links */
+a {
+  color: #000;
+  text-decoration: underline;
 }
 
-section h2 {
-  border-bottom: 2px solid #000;
+a:hover {
+  text-decoration: none;
 }
