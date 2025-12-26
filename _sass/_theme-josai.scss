@@ -152,62 +152,6 @@ ul ul ul {
 /* -----------------------------------------------------
    Tables
 ----------------------------------------------------- */
-// table {
-//   border-collapse: collapse;
-// }
-// th {
-//   background: var(--josai-blue);
-//   color: #ffffff;
-// }
-// td, th {
-//   border: 1px solid var(--border);
-//   padding: 8px 10px;
-// }
-
-// table {
-//   width: 100%;
-//   border-collapse: collapse;
-//   table-layout: fixed;
-//   margin: 1.5em 0;
-// }
-// th {
-//   background: var(--josai-blue);
-//   color: #ffffff;
-//   border-bottom: 4px solid var(--josai-yellow);
-// }
-// td, th {
-//   border: 1px solid var(--border);
-//   padding: 8px 10px;
-//   vertical-align: top;
-// }
-// td {
-//   word-break: break-word;
-// }
-
-// table {
-//   width: 100%;
-//   table-layout: fixed;
-// }
-// table.t-first-2 th:first-child,
-// table.t-first-2 td:first-child { width: 2em; white-space: nowrap; }
-
-// table.t-first-6 th:first-child,
-// table.t-first-6 td:first-child { width: 6em; white-space: nowrap; }
-
-// th {
-//   background: var(--josai-blue);
-//   color: #ffffff;
-//   border-bottom: 4px solid var(--josai-yellow);
-// }
-// td, th {
-//   border: 1px solid var(--border);
-//   padding: 8px 10px;
-//   vertical-align: top;
-// }
-// td {
-//   word-break: break-word;
-// }
-
 /* 表全体の共通 */
 table {
   width: 100%;
@@ -216,7 +160,6 @@ table {
   margin: 1.2em 0;
   background: #fff;
 }
-
 /* ヘッダ */
 th {
   background: var(--josai-blue);
@@ -226,7 +169,6 @@ th {
   padding: 10px 12px;
   text-align: left; /* 基本は左 */
 }
-
 /* セル */
 td {
   border: 1px solid rgba(0,0,0,0.08);
@@ -234,30 +176,23 @@ td {
   vertical-align: top;
   word-break: break-word;
 }
-
 /* 行のホバー（黄色を “面で使いすぎない” よう薄く） */
 tbody tr:hover td {
   background: #fff9d6; /* yellow-tint */
 }
-
 /* 表ごとの 1列目幅 */
 table.t-first-2  th:first-child,
 table.t-first-2  td:first-child { width: 2em; white-space: nowrap; }
-
 table.t-first-6  th:first-child,
 table.t-first-6  td:first-child { width: 6em; white-space: nowrap; }
-
 /* ★ 年月列（1列目）を右揃えに戻す（この表だけ） */
 table.t-first-6 th:first-child,
 table.t-first-6 td:first-child {
   text-align: right;
   font-variant-numeric: tabular-nums; /* 数字が揃って見える（対応環境のみ） */
 }
-
 table[class^="t-first-"] th:first-child,
-table[class^="t-first-"] td:first-child {
-  font-weight: 600;
-}
+table[class^="t-first-"] td:first-child { font-weight: 600; }
 /* タイトル行（thead 内）を太字に */
 table thead th {
   font-weight: 700;
@@ -273,14 +208,10 @@ table.timetable td {
   text-align: center;
   vertical-align: middle;
 }
-
 /* 見やすさ向上（任意） */
 table.timetable td {
   line-height: 1.4;
 }
-// table.timetable td:not(:empty) {
-//   font-weight: 500;
-// }
 
 /* -----------------------------------------------------
    Code blocks

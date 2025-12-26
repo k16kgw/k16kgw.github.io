@@ -38,7 +38,6 @@ title: top page
   </tbody>
 </table>
 
-
 ## 香川の講義日程
 
 ### 春学期
@@ -143,15 +142,15 @@ title: top page
 
 ## 配属までに受講を要する・推奨する科目
 
-- **解析学**（2年次・必須）：本セミナーに参加するにあたり、解析学の基礎的な理解は必須です。
-- **プログラミング入門・プログラミング**（2年次・必須）：数値シミュレーションを行うにあたり、ここまでの履修は必須です。
-- **微分方程式論I・II**（3年次・推奨）：履修していると輪講テキストの理解が捗ります。
-- **応用プログラミングI・II**（3年次・推奨）：履修していると個人研究の可能性が広がります。
+- <span class="highlight">**解析学**</span>（2年次・必須）：本セミナーに参加するにあたり、解析学の基礎的な理解は必須です。
+- <span class="highlight">**プログラミング入門・プログラミング**</span>（2年次・必須）：数値シミュレーションを行うにあたり、ここまでの履修は必須です。
+- <span class="highlight">**微分方程式論I・II**</span>（3年次・推奨）：履修していると輪講テキストの理解が捗ります。
+- <span class="highlight">**応用プログラミングI・II**</span>（3年次・推奨）：履修していると個人研究の可能性が広がります。
 
 # セミナーの進め方
 
-- 春学期：<span class="highlight">輪講</span>
-- 秋学期：<span class="highlight">個人研究</span>
+- 春学期：<span class="highlight">**輪講**</span>
+- 秋学期：<span class="highlight">**個人研究**</span>
 
 ## 輪講
 
@@ -172,9 +171,9 @@ title: top page
 
 # 連絡先
 
-- E-mail: kkagawaあっとjosai.ac.jp (「あっと」を「@」に変換)
+- メールアドレス：kkagawaあっとjosai.ac.jp (「あっと」を「@」に変換)
 
-城西大学の学生は**E-mail**または**Teamsのチャット**で連絡をください。
+城西大学の学生は<span class="highlight">**メール**</span>または<span class="highlight">**Teamsのチャット**</span>で連絡をください。
 
 # 参考
 
@@ -212,7 +211,7 @@ Cahn–Hilliard方程式について、方程式の数学的構造に根拠を�
 解説記事
 - 香川渓一郎, "時間変動する境界条件の下での偏微分方程式の解析," システム／制御／情報, Vol.69, No.9 (2025) pp.338–343.
 
-**以下はこれまで取り組んでいた研究テーマです。**
+<span class="highlight">**以下はこれまで取り組んでいた研究テーマです。**</span>
 
 ### 皮膚の数理モデル
 
@@ -239,7 +238,7 @@ Cahn–Hilliard方程式について、方程式の数学的構造に根拠を�
 - K. Kagawa, K. Kikuchi, N. Bekki, "A power-law of two kernels in reductive nonlinear Rayleigh equation for isotropic elastic materials", Journal of the Physical Society of Japan 90.11 (2021): 114006 (6 pages). https://doi.org/10.7566/JPSJ.90.114006
 - N. Bekki, K. Kagawa, and K. Kikuchi, Decay Instability for Nonlinear Rayleigh Surface Waves on Isotropic Materials, Journal of the Physical Society of Japan 88.12 (2019): 124001 (14 pages). https://doi.org/10.7566/JPSJ.88.124001
 
-**以下はこれから始めようとしている研究テーマです。**
+<span class="highlight">**以下はこれから始めようとしている研究テーマです。**</span>
 
 ### 腸内細菌の数理モデル
 
