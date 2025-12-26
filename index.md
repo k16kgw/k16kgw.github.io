@@ -61,8 +61,8 @@ title: top page
 
 # セミナーの進め方
 
-- 春学期：<span style="color: red; ">輪講</span>
-- 秋学期：<span style="color: red; ">個人研究</span>
+- 春学期：<span class="highlight">輪講</span>
+- 秋学期：<span class="highlight">個人研究</span>
 
 ## 輪講
 
