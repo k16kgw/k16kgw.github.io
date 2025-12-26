@@ -1,0 +1,92 @@
+/* Modern Blue (for jekyll-theme-slate) */
+
+:root {
+  --bg: #f9fbfd;
+  --panel: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --border: #e5e7eb;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
+}
+
+/* Slate wrappers */
+#header_wrap {
+  background: var(--panel) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+#project_title,
+#project_tagline {
+  color: var(--text);
+  text-shadow: none;
+}
+
+#main_content_wrap {
+  background: transparent !important;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+#main_content {
+  color: var(--text);
+}
+
+#footer_wrap {
+  background: var(--panel) !important;
+  border-top: 1px solid var(--border);
+}
+
+footer p,
+#footer_wrap,
+#footer_wrap a {
+  color: var(--muted);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  letter-spacing: 0;
+}
+
+h2 {
+  background: none;
+  border-bottom: 2px solid var(--border);
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* A little “card” feel for content blocks (optional) */
+#main_content {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+}
+
+/* Lists */
+ul {
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul ul ul {
+  list-style-type: square;
+}
