@@ -1,0 +1,91 @@
+/* Academic Dark (for jekyll-theme-slate) */
+
+:root {
+  --bg: #121212;
+  --panel: #181818;
+  --text: #eaeaea;
+  --muted: #b5b5b5;
+  --accent: #4da3ff;
+  --border: #2f2f2f;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Slate wrappers */
+#header_wrap {
+  background: var(--panel) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+#project_title,
+#project_tagline {
+  color: var(--text);
+  text-shadow: none;
+}
+
+#main_content_wrap {
+  background: var(--bg) !important;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+#main_content {
+  color: var(--text);
+}
+
+#footer_wrap {
+  background: var(--panel) !important;
+  border-top: 1px solid var(--border);
+}
+
+footer p,
+#footer_wrap,
+#footer_wrap a {
+  color: var(--muted);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  letter-spacing: 0;
+}
+
+h2 {
+  background: none;
+  border-bottom: 2px solid var(--border);
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Code blocks */
+pre, code {
+  background-color: #0f0f0f;
+  color: var(--text);
+  box-shadow: none;
+  border: 1px solid var(--border);
+}
+
+/* Lists */
+ul {
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul ul ul {
+  list-style-type: square;
+}
