@@ -254,6 +254,11 @@ table.t-first-6 td:first-child {
   font-variant-numeric: tabular-nums; /* 数字が揃って見える（対応環境のみ） */
 }
 
+table[class^="t-first-"] th:first-child,
+table[class^="t-first-"] td:first-child {
+  font-weight: 600;
+}
+
 /* ★ 時間割表は全セル中央揃え */
 table.timetable th,
 table.timetable td {
@@ -264,6 +269,9 @@ table.timetable td {
 /* 見やすさ向上（任意） */
 table.timetable td {
   line-height: 1.4;
+}
+table.timetable td:not(:empty) {
+  font-weight: 500;
 }
 
 /* -----------------------------------------------------

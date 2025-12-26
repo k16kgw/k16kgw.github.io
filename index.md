@@ -76,7 +76,7 @@ title: top page
       <td>ゲーム理論</td>
       <td>応用プログラミングI</td>
       <td></td>
-      <td>数学セミナー</td>
+      <td>数学<br>セミナー</td>
       <td></td>
     </tr>
     <tr>
@@ -84,7 +84,7 @@ title: top page
       <td>ゲーム理論</td>
       <td>応用プログラミングI</td>
       <td></td>
-      <td>数学セミナー</td>
+      <td>数学<br>セミナー</td>
       <td></td>
     </tr>
   </tbody>
@@ -125,7 +125,7 @@ title: top page
       <td></td>
       <td>応用プログラミングII</td>
       <td></td>
-      <td>数学セミナー</td>
+      <td>数学<br>セミナー</td>
       <td></td>
     </tr>
     <tr>
@@ -133,7 +133,7 @@ title: top page
       <td></td>
       <td></td>
       <td></td>
-      <td>数学セミナー</td>
+      <td>数学<br>セミナー</td>
       <td></td>
     </tr>
   </tbody>
