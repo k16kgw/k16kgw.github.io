@@ -79,11 +79,17 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0;
 }
 
+// h2 {
+//   background: none;
+//   border-bottom: 3px solid var(--josai-blue);
+//   padding-bottom: 6px;
+// }
+
 h2 {
-  background: none;
   border-bottom: 3px solid var(--josai-blue);
-  padding-bottom: 6px;
+  box-shadow: inset 0 -6px 0 var(--josai-yellow);
 }
+
 
 /* -----------------------------------------------------
    Links
