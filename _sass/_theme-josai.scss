@@ -1,0 +1,159 @@
+/* =====================================================
+   Josai University Theme
+   (for jekyll-theme-slate)
+   School Colors:
+     Blue   : #0068B7 (RGB 0,104,183)
+     Yellow : #FDD000 (RGB 253,208,0)
+   ===================================================== */
+
+:root {
+  --josai-blue:   #0068B7;
+  --josai-yellow: #FDD000;
+
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --text: #1f2937;
+  --muted: #555555;
+  --border: #dcdcdc;
+}
+
+/* -----------------------------------------------------
+   Base
+----------------------------------------------------- */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
+}
+
+/* -----------------------------------------------------
+   Header (Slate)
+----------------------------------------------------- */
+#header_wrap {
+  background: var(--josai-blue) !important;
+  border-bottom: 4px solid var(--josai-yellow);
+}
+
+#project_title {
+  color: #ffffff;
+  text-shadow: none;
+}
+
+#project_tagline {
+  color: #eef6ff;
+  text-shadow: none;
+}
+
+/* -----------------------------------------------------
+   Main content
+----------------------------------------------------- */
+#main_content_wrap {
+  background: var(--bg) !important;
+  border-top: none;
+  border-bottom: none;
+}
+
+#main_content {
+  color: var(--text);
+}
+
+/* -----------------------------------------------------
+   Footer
+----------------------------------------------------- */
+#footer_wrap {
+  background: #f5f7fa !important;
+  border-top: 1px solid var(--border);
+}
+
+#footer_wrap,
+#footer_wrap a,
+footer p {
+  color: var(--muted);
+}
+
+/* -----------------------------------------------------
+   Headings
+----------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--josai-blue);
+  letter-spacing: 0;
+}
+
+h2 {
+  background: none;
+  border-bottom: 3px solid var(--josai-blue);
+  padding-bottom: 6px;
+}
+
+/* -----------------------------------------------------
+   Links
+----------------------------------------------------- */
+a {
+  color: var(--josai-blue);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* 強調リンク（必要な場合に class="highlight" を付与） */
+a.highlight {
+  color: var(--josai-blue);
+  background: linear-gradient(
+    transparent 70%,
+    var(--josai-yellow) 70%
+  );
+}
+
+/* -----------------------------------------------------
+   Lists
+----------------------------------------------------- */
+ul {
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+ul ul ul {
+  list-style-type: square;
+}
+
+/* -----------------------------------------------------
+   Tables
+----------------------------------------------------- */
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background: var(--josai-blue);
+  color: #ffffff;
+}
+
+td, th {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+}
+
+/* -----------------------------------------------------
+   Code blocks
+----------------------------------------------------- */
+pre, code {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+
+/* -----------------------------------------------------
+   Images
+----------------------------------------------------- */
+img {
+  box-shadow: none;
+  border: 1px solid var(--border);
+}
