@@ -86,8 +86,8 @@ h1, h2, h3, h4, h5, h6 {
 // }
 
 h2 {
-  border-bottom: 3px solid var(--josai-yellow);
-  box-shadow: inset 0 -6px 0 var(--josai-blue);
+  border-bottom: 3px solid var(--josai-blue);
+  box-shadow: inset 0 -6px 0 var(--josai-yellow);
 }
 
 .highlight {
@@ -175,4 +175,25 @@ pre, code {
 img {
   box-shadow: none;
   border: 1px solid var(--border);
+}
+
+/* -----------------------------------------------------
+   Notice
+----------------------------------------------------- */
+.notice {
+  border-left: 6px solid var(--josai-yellow);
+  padding: 12px 16px;
+  background: #fffbea;
+  margin: 1.5em 0;
+}
+
+/* -----------------------------------------------------
+   Hero
+----------------------------------------------------- */
+.hero-accent {
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom: 4px solid var(--josai-yellow);
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
