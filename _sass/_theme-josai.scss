@@ -187,10 +187,12 @@ ul ul ul {
 //   width: 100%;
 //   table-layout: fixed;
 // }
-.t-first-2 table th:first-child,
-.t-first-2 table td:first-child { width: 2em; white-space: nowrap; }
-.t-first-6 table th:first-child,
-.t-first-6 table td:first-child { width: 6em; white-space: nowrap; }
+table.t-first-2 th:first-child,
+table.t-first-2 td:first-child { width: 2em; white-space: nowrap; }
+
+table.t-first-6 th:first-child,
+table.t-first-6 td:first-child { width: 6em; white-space: nowrap; }
+
 // th {
 //   background: var(--josai-blue);
 //   color: #ffffff;
