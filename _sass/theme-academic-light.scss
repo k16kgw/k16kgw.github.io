@@ -1,0 +1,31 @@
+/* theme-academic-light.css */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --subtext-color: #555;
+  --accent-color: #003366; /* 濃い紺 */
+  --border-color: #ddd;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: rgba(255,255,255,0.95);
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav ul li a {
+  color: var(--text-color);
+}
+
+nav ul li a.active {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+section h2 {
+  border-bottom: 2px solid var(--border-color);
+}
