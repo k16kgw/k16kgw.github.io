@@ -258,7 +258,15 @@ table[class^="t-first-"] th:first-child,
 table[class^="t-first-"] td:first-child {
   font-weight: 600;
 }
-
+/* タイトル行（thead 内）を太字に */
+table thead th {
+  font-weight: 700;
+}
+/* すでに指定した「1列目太字」とも共存 */
+table[class^="t-first-"] th:first-child,
+table[class^="t-first-"] td:first-child {
+  font-weight: 600;
+}
 /* ★ 時間割表は全セル中央揃え */
 table.timetable th,
 table.timetable td {
@@ -270,9 +278,9 @@ table.timetable td {
 table.timetable td {
   line-height: 1.4;
 }
-table.timetable td:not(:empty) {
-  font-weight: 500;
-}
+// table.timetable td:not(:empty) {
+//   font-weight: 500;
+// }
 
 /* -----------------------------------------------------
    Code blocks
