@@ -154,38 +154,43 @@ ul ul ul {
 // table {
 //   border-collapse: collapse;
 // }
-
 // th {
 //   background: var(--josai-blue);
 //   color: #ffffff;
 // }
-
 // td, th {
 //   border: 1px solid var(--border);
 //   padding: 8px 10px;
 // }
 
+// table {
+//   width: 100%;
+//   border-collapse: collapse;
+//   table-layout: fixed;
+//   margin: 1.5em 0;
+// }
+// th {
+//   background: var(--josai-blue);
+//   color: #ffffff;
+//   border-bottom: 4px solid var(--josai-yellow);
+// }
+// td, th {
+//   border: 1px solid var(--border);
+//   padding: 8px 10px;
+//   vertical-align: top;
+// }
+// td {
+//   word-break: break-word;
+// }
+
 table {
   width: 100%;
-  border-collapse: collapse;
   table-layout: fixed;
-  margin: 1.5em 0;
 }
-
-th {
-  background: var(--josai-blue);
-  color: #ffffff;
-  border-bottom: 4px solid var(--josai-yellow);
-}
-
-td, th {
-  border: 1px solid var(--border);
-  padding: 8px 10px;
-  vertical-align: top;
-}
-
-td {
-  word-break: break-word;
+th:first-child,
+td:first-child {
+  width: 6em;      /* 年度・番号用。調整可 */
+  white-space: nowrap;
 }
 
 /* -----------------------------------------------------
