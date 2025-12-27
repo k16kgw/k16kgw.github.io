@@ -41,7 +41,7 @@ permalink: /class/
       <td></td>
       <td></td>
       <td></td>
-      <td>数学研究</td>
+      <td>数学研究I</td>
       <td>会議<br>（不定期）</td>
     </tr>
     <tr>
@@ -49,7 +49,7 @@ permalink: /class/
       <td></td>
       <td>計算機入門I</td>
       <td></td>
-      <td>数学研究</td>
+      <td>数学研究II</td>
       <td>会議<br>（不定期）</td>
     </tr>
   </tbody>
