@@ -38,7 +38,9 @@ title: top page
   </tbody>
 </table>
 
-## 香川の講義日程
+## 香川の時間割
+
+[過去の時間割](/pages/class.md)
 
 ### 春学期
 
@@ -76,7 +78,7 @@ title: top page
       <td>応用プログラミングI</td>
       <td></td>
       <td>数学<br>セミナー</td>
-      <td></td>
+      <td>会議<br>（不定期）</td>
     </tr>
     <tr>
       <td>4</td>
@@ -84,7 +86,7 @@ title: top page
       <td>応用プログラミングI</td>
       <td></td>
       <td>数学<br>セミナー</td>
-      <td></td>
+      <td>会議<br>（不定期）</td>
     </tr>
   </tbody>
 </table>
@@ -138,6 +140,16 @@ title: top page
   </tbody>
 </table>
 
+## 連絡先
+
+- メールアドレス：kkagawaあっとjosai.ac.jp (「あっと」を「@」に変換)
+- 居室：東京紀尾井町キャンパス3号棟3階3306室
+- 居室：坂戸キャンパス23号棟4階424室
+
+- 講義のある日は東京紀尾井町キャンパスに出講しています。会議のある日は坂戸キャンパスに出講していることが多いです。
+- 城西大学の学生は<span class="highlight">**メール**</span>または<span class="highlight">**Teamsのチャット**</span>で連絡をください。
+- <span class="highlight">相談のある場合はあらかじめアポを取ってください。</span>居室にはいたりいなかったりします。
+
 # セミナーに配属されるまで
 
 ## 配属までに受講を要する・推奨する科目
@@ -168,12 +180,6 @@ title: top page
 - テーマの決め方
   - 身近な興味のある現象を扱ってみる
   - 輪講で扱った問題を発展させるなど
-
-# 連絡先
-
-- メールアドレス：kkagawaあっとjosai.ac.jp (「あっと」を「@」に変換)
-
-城西大学の学生は<span class="highlight">**メール**</span>または<span class="highlight">**Teamsのチャット**</span>で連絡をください。
 
 # 参考
 
