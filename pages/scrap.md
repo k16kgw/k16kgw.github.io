@@ -1,3 +1,9 @@
+---
+layout: default
+title: 抜き書き
+permalink: /scrap/
+---
+
 ここではスクラップとして残しておきたい言葉を抜粋しています。
 
 # 教育について
