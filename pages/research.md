@@ -35,6 +35,13 @@ Cahn–Hilliard方程式について、方程式の数学的構造に根拠を�
 研究費
 - 2023年度 - 2024年度    科学研究費補助金 研究活動スタート支援 [23K19003](https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-23K19003/)「境界での時間発展を考慮したCahn-Hilliard方程式の解のダイナミクスの探索」2023.08.31–2025.03.31, 配分額2,860千円
 
+## 連立Cahn–Hilliard系の自由エネルギーの全域的探索
+
+溶媒中のブロックコポリマーの相分離現象を記述する数理モデルである連立Cahn–Hilliard系について、系の持つ自由エネルギーの全貌を数値シミュレーションや分岐解析を活用して調べています。
+
+論文リスト
+- K. Kagawa, T. Watanabe, Y. Nishiura, "Exploring global landscape of free energy for the coupled Cahn–Hilliard equations," [arXiv:2507.08819](https://doi.org/10.48550/arXiv.2507.08819)
+
 ## 皮膚の数理モデル
 
 皮膚の付属器官である毛包の形態形成を表現する数理モデルの構築を始めとして、皮膚に見られる現象を広範に再現できる数理モデルの実現を目指しています。
@@ -50,7 +57,7 @@ Cahn–Hilliard方程式について、方程式の数学的構造に根拠を�
 サッカー・卓球・ゲートボールについて、競技から得られるデータを基に統計的な観点からの解析や機械学習を活用した分析によって、スポーツに新たな視点をもたらすことを目指しています。
 
 論文リスト
-- K. Yamamoto, S. Uezu, K. Kagawa, Y. Yamazaki, T. Narizuka, Theory and data analysis of player and team ball possession time in football, Phys. Rev. E, Vol.109 (2024) 014305. https://doi.org/10.1103/PhysRevE.109.014305, arXiv:2308.05460
+- K. Yamamoto, S. Uezu, K. Kagawa, Y. Yamazaki, T. Narizuka, Theory and data analysis of player and team ball possession time in football, –`. Rev. E, Vol.109 (2024) 014305. https://doi.org/10.1103/PhysRevE.109.014305, arXiv:2308.05460
 - 香川渓一郎, 山崎義弘, 成塚拓真, 山本健, "卓球の試合全体に対する３次元座標推定," 統計数理研究所共同研究リポート (2022).
 - 香川渓一郎, 山崎義弘, 多賀圭理, 成塚拓真,  "ゲートボールで観られる時間変動に基づく戦況・戦術の把握," 統計数理研究所共同研究リポート (2021).
 
