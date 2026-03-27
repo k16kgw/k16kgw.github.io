@@ -77,4 +77,6 @@ Cahn–Hilliard方程式について、方程式の数学的構造に根拠を�
 
 ## ヴァーチャルテコンドーのデータ分析
 
+[城西大学におけるヴァーチャルテコンドーの動向](https://seminar.k16kgw.com/virtual-taekwondo/)
+
 ## 眼圧の新規測定法の提案
