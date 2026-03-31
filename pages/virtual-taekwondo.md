@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: virtual-taekwondo
 title: VRテコンドー
 header_title: VRテコンドー
 header_subtitle: VR空間で対戦するeスポーツ
