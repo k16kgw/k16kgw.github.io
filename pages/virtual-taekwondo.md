@@ -1,4 +1,4 @@
----
+<img width="742" height="36" alt="image" src="https://github.com/user-attachments/assets/a3827be0-6e1d-4791-a409-c9cd9c9a7fa7" /><img width="693" height="32" alt="image" src="https://github.com/user-attachments/assets/6ba2c2c8-f1e4-4cf3-b8e0-e6864b919580" /><img width="543" height="32" alt="image" src="https://github.com/user-attachments/assets/5875167a-8bfa-47f7-be54-a3108e957722" />---
 layout: default
 title: VRテコンドー
 permalink: /virtual-taekwondo/
@@ -6,20 +6,31 @@ permalink: /virtual-taekwondo/
 
 # ヴァーチャルテコンドー（VRテコンドー）
 
-センサーでトラッキングしたプレイヤーの身体の動きを仮想空間上のアバターにリアルタイムで反映し、アバター同士が互いの体力ゲージを削ることで対戦します。
+センサーでトラッキングしたプレイヤーの身体の動きを仮想空間上のアバターにリアルタイムで反映し、アバター同士が互いの体力ゲージを削ることで対戦するeスポーツ。VRゴーグル内に映し出される対戦相手のアバターを足で攻撃する。
 
 ## 特徴
 
-- 体格差のハンデがない
+- 安全性：仮想空間上で戦い、物理的な接触が生じないことから怪我のリスクが小さい。
+- 公平性：アバターのサイズは統一されるため、年齢・性別・体格のハンデがなく、誰でも気軽に参加できる。
+  - 2023年の大会では、14歳の選手がリアルテコンドーのオリンピック金メダリスト(当時36歳)に勝利。
 
 参考記事：
 - [J-CAST「「バーチャルテコンドー」男性vs女性で試合　身体差を超えたeスポーツ」2023.08.29](https://www.j-cast.com/trend/2023/08/29467670.html)
+- [TeamSG's Nigel Tan Claimed the Gold in Virtual Taekwondo, at Olympic Esports Week 2023!](https://www.activesgcircle.gov.sg/read/teamsgs-nigel-tan-claimed-the-gold-in-virtual-taekwondo-at-olympic-esports-week-2023)
 
 ## オリンピック・eスポーツ・ゲームズの正式種目に
 
-国際オリンピック委員会（IOC）が主催する「オリンピック・eスポーツ・ゲームズ」の正式種目に選出されました。
+国際オリンピック委員会（IOC）が主催する「オリンピック・eスポーツ・ゲームズ」の正式種目に選出された。
 
-# 開催履歴
+## 数理xVRテコンドー
+
+データ分析や数理モデルの手法を活用して戦術・練習・試合の面で新しい知見を得る。
+
+- 戦術：新定石の発見
+- 練習：効果的な攻撃を磨く
+- 試合：相手の弱点を突く
+
+# 城西大での開催履歴
 
 ## 体験会
 
@@ -42,3 +53,10 @@ permalink: /virtual-taekwondo/
 - 開催日：2025年12月6日(土)
 - [城西大学「【東京紀尾井町キャンパス】 城西Cup　第２回埼玉オープンヴァーチャルテコンドー選手権大会in Tokyoを城西大学東京紀尾井町キャンパスで開催」](https://www.josai.ac.jp/news/20251212_01/)
 - [城西大学「東京紀尾井町キャンパスで開催された埼玉オープンVRテコンドー選手権大会が「埼玉新聞」で紹介されました」](https://www.josai.ac.jp/news/20251223/)
+
+# 問い合わせ
+
+- 香川渓一郎
+  - メールアドレス：kkagawa_あっと_josai.ac.jp（"_あっと_"を"@"に置き換えてください）
+  - Teams
+  - 居室：3号棟3階3306室
