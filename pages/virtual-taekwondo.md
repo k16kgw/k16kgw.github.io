@@ -1,6 +1,8 @@
 ---
 layout: default
 title: VRテコンドー
+header_title: VRテコンドー
+header_subtitle: VR空間で対戦するeスポーツ
 permalink: /virtual-taekwondo/
 ---
 
