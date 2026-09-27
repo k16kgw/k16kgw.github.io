@@ -6,6 +6,11 @@ permalink: /links/
 
 講義ノートへのリンク
 
+### 2026年度秋学期
+
+- [フレッシュマンセミナーII](https://seminar.k16kgw.com/Class_Josai_FreshmanSeminarII)
+- [応用プログラミングII](https://seminar.k16kgw.com/Class_Josai_AppliedProgrammingII)
+
 ### 2026年度春学期
 
 - [フレッシュマンセミナーI](https://seminar.k16kgw.com/Class_Josai_FreshmanSeminarI)
